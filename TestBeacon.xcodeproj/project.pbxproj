@@ -14,6 +14,7 @@
 		F8BC1D4023471D6C00842BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BC1D3E23471D6C00842BF7 /* LaunchScreen.storyboard */; };
 		F8BC1D4B23471D6C00842BF7 /* TestBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BC1D4A23471D6C00842BF7 /* TestBeaconTests.swift */; };
 		F8BC1D5623471D6C00842BF7 /* TestBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BC1D5523471D6C00842BF7 /* TestBeaconUITests.swift */; };
+		F8BC1D65234721FF00842BF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BC1D64234721FF00842BF7 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F8BC1D5123471D6C00842BF7 /* TestBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBeaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BC1D5523471D6C00842BF7 /* TestBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBeaconUITests.swift; sourceTree = "<group>"; };
 		F8BC1D5723471D6C00842BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8BC1D64234721FF00842BF7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BC1D65234721FF00842BF7 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				F8BC1D4923471D6C00842BF7 /* TestBeaconTests */,
 				F8BC1D5423471D6C00842BF7 /* TestBeaconUITests */,
 				F8BC1D3323471D6A00842BF7 /* Products */,
+				F8BC1D63234721FE00842BF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				F8BC1D5723471D6C00842BF7 /* Info.plist */,
 			);
 			path = TestBeaconUITests;
+			sourceTree = "<group>";
+		};
+		F8BC1D63234721FE00842BF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8BC1D64234721FF00842BF7 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +205,14 @@
 				TargetAttributes = {
 					F8BC1D3123471D6A00842BF7 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					F8BC1D4523471D6C00842BF7 = {
 						CreatedOnToolsVersion = 10.1;
@@ -433,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795HV8ALUR;
 				INFOPLIST_FILE = TestBeacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 795HV8ALUR;
 				INFOPLIST_FILE = TestBeacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
